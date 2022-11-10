@@ -60,15 +60,13 @@ class Parser:
         # Returns the 'dest' mnemonic from a C-Instruction in the form 'dest=comp'.
         if "=" in self.hack_line:
             return self.hack_line.split("=")[0]
-        else:
-            return "null"
+        return "null"
 
     def jump(self):
         # Returns the 'jump' mnemonic from a C-Instruction in the form 'comp;jump'.
         if ";" in self.hack_line:
             return self.hack_line.split(";")[1]
-        else:
-            return "null"
+        return "null"
 
 
 class Assembler:
