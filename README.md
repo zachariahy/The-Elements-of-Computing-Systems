@@ -6,7 +6,9 @@ Professors Noam Nisan and Shimon Schocken function as system architects and guid
 The course is colloquially known as "Nand to Tetris" since it begins with an elementary Nand gate, and ends with a computer capable of running a game of Tetris.
 
 This repo contains the suite of translators ([assembler](https://github.com/zachariahy/The-Elements-of-Computing-Systems/tree/main/src/Hack%20assembler), [VM translator](https://github.com/zachariahy/The-Elements-of-Computing-Systems/tree/main/src/VM%20translator), and [compiler](https://github.com/zachariahy/The-Elements-of-Computing-Systems/tree/main/src/Jack%20compiler)) that I developed to complete the course. I primarily referenced [The Elements of Computing Systems: Building a Modern Computer from First Principles, Second Edition](https://mitpress.mit.edu/9780262539807/the-elements-of-computing-systems/).
-
+<br>
+<br>
+<br>
 <p align="center">
   <img src="https://github.com/zachariahy/The-Elements-of-Computing-Systems/blob/main/the-big-picture.jpg" alt="Image of 'The big idea' slide from Nand2Tetris, illustrating the use of the Jack Compiler, VM Translator, and assembler." width="600" height="400">
 </p>
