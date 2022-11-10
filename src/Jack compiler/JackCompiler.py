@@ -19,7 +19,6 @@ class JackCompiler:
 
         if arg.endswith('.jack'):
             CompilationEngine(arg)
-
         else:
             for file in os.listdir(arg):
                 if not file.endswith('.jack'):
