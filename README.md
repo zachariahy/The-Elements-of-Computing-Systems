@@ -5,7 +5,11 @@ Professors Noam Nisan and Shimon Schocken function as system architects and guid
 
 The course is colloquially known as "Nand to Tetris" since it begins with an elementary Nand gate, and ends with a computer capable of running a game of Tetris.
 
-I primarily referenced [The Elements of Computing Systems: Building a Modern Computer from First Principles, Second Edition](https://mitpress.mit.edu/9780262539807/the-elements-of-computing-systems/) to complete the projects. This repo contains the [assembler](https://github.com/zachariahy/The-Elements-of-Computing-Systems/tree/main/src/Hack%20assembler), [VM translator](https://github.com/zachariahy/The-Elements-of-Computing-Systems/tree/main/src/VM%20translator), and [compiler](https://github.com/zachariahy/The-Elements-of-Computing-Systems/tree/main/src/Jack%20compiler).
+This repo contains the suite of translators ([assembler](https://github.com/zachariahy/The-Elements-of-Computing-Systems/tree/main/src/Hack%20assembler), [VM translator](https://github.com/zachariahy/The-Elements-of-Computing-Systems/tree/main/src/VM%20translator), and [compiler](https://github.com/zachariahy/The-Elements-of-Computing-Systems/tree/main/src/Jack%20compiler)) that I developed to complete the course. I primarily referenced [The Elements of Computing Systems: Building a Modern Computer from First Principles, Second Edition](https://mitpress.mit.edu/9780262539807/the-elements-of-computing-systems/).
+
+<p align="center">
+  <img src="https://github.com/zachariahy/The-Elements-of-Computing-Systems/blob/main/the-big-picture.jpg" alt="Image of 'The big idea' slide from Nand2Tetris, illustrating the use of the Jack Compiler, VM Translator, and assembler." width="600" height="400">
+</p>
 
 ## Overview ##
 
@@ -15,14 +19,14 @@ I primarily referenced [The Elements of Computing Systems: Building a Modern Com
 - _Boolean arithmetic_: we use elementary logic gates to build a set of combinational gates, including a family of adder chips, leading to the construction of an Arithmetic-Logic Unit (ALU).
 - _Memory_: we build a memory hierarchy, from single-bit cells to registers to RAM units of arbitrary size.
 - _Machine language_: the professors introduce an instruction set and abstract computer architecture. We write some low-level interactive programs in assembly language and execute them locally on a supplied CPU emulator.
-- _Computer architecture_: we build a CPU and integrate all of the previously built chips into a computer platform named _Hack_, capable of executing binary machine code.
+- _Computer architecture_: we build a CPU and integrate all of the previously built chips into a computer platform named _Hack_, a Harvard Architecture, capable of executing binary machine code.
 - [_Assembler_](https://github.com/zachariahy/The-Elements-of-Computing-Systems/tree/main/src/Hack%20assembler): We develop an assembler to translate symbolic machine code to binary machine code.
 
 #### Software Hierarchy: ####
 
 - [_Virtual machine_](https://github.com/zachariahy/The-Elements-of-Computing-Systems/tree/main/src/VM%20translator): the professors present a simple VM language modeled after Java's JVM. We write a JRE-like program that translates VM commands into assembly code. Then, we extend the translator into a complete VM translator.
 - _High-level language_: Professors introduce _Jack_, a simple, high-level, object-oriented, Java-like language. We implement an interactive program in Jack and run it on the computer platform (using executable versions of the compiler and OS).
-- [_Compiler_](https://github.com/zachariahy/The-Elements-of-Computing-Systems/tree/main/src/Jack%20compiler): Students build a syntax analyzer (tokenizer and parser) for the Jack language using a proposed software architecture and API. We then extend the syntax analyzer into a full-scale compiler that translates Jack programs into VM code.
+- [_Compiler_](https://github.com/zachariahy/The-Elements-of-Computing-Systems/tree/main/src/Jack%20compiler): Students build a syntax analyzer (tokenizer and parser) for the Jack language using a proposed software architecture and API. We then extend the syntax analyzer into a full-scale, recursive descent compiler that translates Jack programs into VM code.
 - _Operating system_: Students build the OS in Jack using various memory management, algebraic, and geometric algorithms, to close gaps between the Jack language and the Hack platform.
 
 ## Limitations ##
